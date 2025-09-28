@@ -20,6 +20,34 @@ def receiptView():
     print("======================================\n")
 
 
+def militaryTimeAlarm():
+    # Ask user to enter the time in 24-hour format
+    time24h = int(
+        input("Please enter the time in 24-hour format (e.g., 1300 for 1:00 PM): ")
+    )
+    # Ask user to enter the number of hours to set the alarm
+    hoursToAdd = int(input("Please enter the number of hours to set the alarm: "))
+
+    # Calculate the alarm time
+    alarmTime = (time24h + (hoursToAdd * 100)) % 2400
+
+    # Print the alarm time
+    print(f"The alarm will go off at {alarmTime:04d} hours.")
+
+
 # Run the program
 if __name__ == "__main__":
-    receiptView()
+    # Ask the user which function to run
+    while True:
+        choice = input(
+            "Enter '1' for Receipt View, '2' for Military Time Alarm, or 'q' to quit: "
+        )
+        if choice == "1":
+            receiptView()
+        elif choice == "2":
+            militaryTimeAlarm()
+        elif choice.lower() == "q":
+            print("Exiting program. Goodbye!")
+            break
+        else:
+            print("Invalid input. Please try again.")
