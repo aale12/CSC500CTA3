@@ -26,6 +26,3 @@ This repository contains the solution for Critical Thinking Assignment 3 for the
 - Course: CSC500
 - Assignment: Critical Thinking Assignment 3 
 
----
-
-Feel free to update this README with your name and any additional instructions as needed.
