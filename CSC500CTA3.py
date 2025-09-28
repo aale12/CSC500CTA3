@@ -1,3 +1,7 @@
+# CSC500 Critical Thinking Assignment 3
+# Submission by: Anthony LE
+
+
 def receiptView():
     # Ask user to enter the charge for the food
     # Prompt user for a valid monetary value (positive number)
